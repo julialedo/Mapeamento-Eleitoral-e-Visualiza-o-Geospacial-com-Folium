@@ -38,6 +38,9 @@ ARQUIVOS = [
 
 
 def recortar(entrada: Path, saida: Path) -> None:
+    if saida.exists():
+        print(f"[já existe] {saida.relative_to(PASTA)} (apague o arquivo para gerar de novo)")
+        return
     if not entrada.exists():
         print(f"[pulado] não encontrei {entrada.relative_to(PASTA)}")
         return
