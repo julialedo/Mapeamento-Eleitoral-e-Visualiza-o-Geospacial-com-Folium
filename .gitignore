@@ -1,0 +1,22 @@
+# Arquivos originais do TSE: passam do limite de 100 MB do GitHub.
+# Os links para baixar estão no README; o recorte_sjdr.py gera os arquivos de dados_sjdr/ a partir deles.
+votacao_secao_2026_BR/
+votacao_secao_2026_BR.zip
+eleitorado_local_votacao_2026/
+eleitorado_local_votacao_2026.zip
+*.zip
+
+# Materiais da aula e arquivos pessoais (não são para publicar)
+audio_aula_portugues.m4a
+transcricao_audio_aula.txt
+Folium.pdf
+implementacao_folium.pdf
+folium.ipynb
+Captura de tela*.png
+
+# Mapas de teste (só os mapas finais vão para o repositório)
+mapas/teste_*.html
+
+# Arquivos automáticos do Python/Jupyter
+__pycache__/
+.ipynb_checkpoints/
