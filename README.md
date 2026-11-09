@@ -9,11 +9,15 @@ por local de votação em **São João del-Rei (MG)**, usando `pandas`, `geopand
 
 | Mapa | Arquivo | Situação |
 |---|---|---|
+| 1º turno: Flávio Bolsonaro (PL), mapa de calor | [`mapas/mapa_1turno_flavio.html`](mapas/mapa_1turno_flavio.html) | ✅ |
+| 1º turno: Lula (PT), mapa de calor | [`mapas/mapa_1turno_lula.html`](mapas/mapa_1turno_lula.html) | ✅ |
+| 1º turno: Augusto Cury (Avante), mapa de calor | [`mapas/mapa_1turno_cury.html`](mapas/mapa_1turno_cury.html) | ✅ |
+| 1º turno: Renan Santos (Missão), mapa de calor | [`mapas/mapa_1turno_renan.html`](mapas/mapa_1turno_renan.html) | ✅ |
 | 2º turno: Lula × Flávio Bolsonaro (paleta divergente) | [`mapas/mapa_2turno.html`](mapas/mapa_2turno.html) | ✅ |
-| 1º turno: um mapa para cada um dos 4 candidatos mais votados no município | — | em andamento |
 
 Os mapas são arquivos HTML interativos: abra no navegador (é preciso internet para carregar o mapa de fundo).
-Passe o mouse sobre os círculos para ver os detalhes de cada local de votação.
+Passe o mouse sobre os círculos (2º turno) ou sobre os pontos brancos (1º turno) para ver os detalhes de cada local
+de votação.
 
 ## Estrutura do repositório
 
@@ -68,6 +72,9 @@ As justificativas completas estão no notebook. Em resumo:
   diferentes (por exemplo, o Colégio Tiradentes PMMG e o Campus Dom Bosco da UFSJ, que tem uma "Seção Especial" com
   código próprio).
 - Os percentuais são calculados sobre os **votos válidos** (sem brancos e nulos).
+- Nos **mapas de calor do 1º turno**, o peso de cada local é o número de **votos acima do esperado** pela média da
+  cidade (votos válidos do local × % do candidato na cidade). Com os votos brutos, os quatro mapas mostrariam só onde
+  há mais eleitores.
 
 ## Bibliotecas
 
